@@ -1,6 +1,6 @@
 <!-- Home page design with small circular image bisecting card. -->
 
-{% assign essay_pages = site.pages | where: "type", "essay"  | where_exp: "page", "page.draft != true" %}
+{% assign essay_pages = site.pages | where: "type", "essay" | where_exp: "page", "page.draft != true" %}
 {% assign project_pages = site.pages | where: "type", "project" | where_exp: "page", "page.draft != true" %}
 {% assign num_essays = essay_pages.size %}
 {% assign num_projects = project_pages.size %}
@@ -29,7 +29,7 @@
         <div class="description">
           Interests:
           {% for interest in site.data.bio.interests %}
-            {{ interest.name }}{% if forloop.last != true %}, {% endif %}
+          {{ interest.name }}{% if forloop.last != true %}, {% endif %}
           {% endfor %}
 
         </div>
@@ -37,11 +37,11 @@
       <div class="center aligned extra content">
         {% include home-network-links.html %}
       </div>
-      <div class="center aligned content">
+      <!-- <div class="center aligned content">
         <a href="{{ site.baseurl}}/blog/">
           <button class="ui basic button">Blog</button>
         </a>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>
