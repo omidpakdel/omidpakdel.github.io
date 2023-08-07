@@ -282,7 +282,7 @@ function print() { __p += __j.call(arguments, '') }
   color: ${({theme:e})=>{var t;return(t=e.colors)==null?void 0:t.primary}};
 `,WP=we.span`
   color: ${({theme:e})=>{var t;return(t=e.colors)==null?void 0:t.secondary}};
-`,lm=()=>M.jsxs(DP,{children:[M.jsx(WP,{children:"user"}),"@",M.jsx(UP,{children:"omidpakdel.ir"}),":~$"]}),BP=we.div`
+`,lm=()=>M.jsxs(DP,{children:[M.jsx(WP,{children:"user"}),"@",M.jsx(UP,{children:"omidpakdel.github.io"}),":~$"]}),BP=we.div`
   padding: 1.25rem;
   padding-top: 0.75rem;
 
